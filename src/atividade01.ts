@@ -13,6 +13,28 @@ export default function atividade01() {
   // Se a nota inserida for inválida (menor que 0 ou maior que 100), o programa deve imprimir uma mensagem de erro.
 
 
+  let nota = leia.questionInt("Digite uma nota entre 0 e 100: ");
 
+  if(nota < 0 || nota > 100){
+    console.log("Nota invalida. ");
+    return
+  }
+
+
+  if(nota >= 90 && nota <= 100){
+    console.log("Voce tirou um A.");
+    return
+  }else if(nota >= 80 && nota <= 89){
+    console.log("Voce tirou um B.");
+    return
+  }else if(nota >= 70 && nota <= 79){
+    console.log("Voce tirou um C");
+    return
+  }else if(nota >= 60 && nota <= 69){
+    console.log("Voce tirou um D");
+    return
+  }else{
+    console.log("Voce tirou um F.")
+  }
 
 }
